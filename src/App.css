@@ -1,7 +1,9 @@
 .App {
   text-align: left;
 }
-
+.ordernum {
+  text-align: center;
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
@@ -48,6 +50,7 @@
 tr {
   color: #5b5757;
 }
+
 
 .results {
   padding-top: 15px;
