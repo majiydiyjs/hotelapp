@@ -3,11 +3,17 @@ import FakeBookings from "./data/fakeBookings.json";
 function SearchResults() {
   const [data, setData] = useState(FakeBookings);
 
+  const [color, setColor] = useState("#696666");
+
+  const changeColor = () => {
+    setColor("#0c6dfd");
+  };
+
   return (
     <div>
       <table className="table">
         <thead>
-          <tr>
+          <tr style={{ color: color }} onClick={changeColor}>
             <th scope="col">ID</th>
             <th scope="col">Title</th>
             <th scope="col">First name</th>
